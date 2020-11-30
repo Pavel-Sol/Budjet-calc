@@ -1,0 +1,34 @@
+@media screen and (max-width: 992px) {
+    .main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .data {
+        max-width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .result {
+        width: 95%;
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .result {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .data {
+        max-width: 95%;
+    }
+
+
+    .expenses-item {
+        text-overflow: ellipsis;
+        padding-right: 5px;
+        width: 45%;
+    }
+}

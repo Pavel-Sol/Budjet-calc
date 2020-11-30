@@ -1,0 +1,212 @@
+/* *{box-sizing:border-box;margin:0;padding:0;font-family:Ubuntu;outline:0}a{text-decoration:none}a:visited{text-decoration:none}a:hover{text-decoration:none}a:focus{text-decoration:none}a:active{text-decoration:none}.app{background-color:#faf8f5;min-height:800px}.logo{width:100%;height:60px;line-height:60px;background-color:#fff;box-shadow:0 1.5px 10px 0 rgba(1,0,42,.05);text-align:center}.logo span{color:#ff6a30}.title{width:100%;margin-top:30px;font-weight:500;font-size:20px;color:#262626;text-align:center}.main{display:flex;margin:0 10%;padding-top:40px}.data .choose-expenses,.data .choose-income-label,.data .count-budget,.data .optionalexpenses{margin:13px 0;font-weight:500;font-size:14px;color:#262626;text-align:center}.data .choose-income,.data .choose-percent,.data .choose-sum,.data .expenses-item,.data .optionalexpenses-item{height:35px;width:calc((100%/2) - 4px);border-radius:2.5px;background-color:#fff;box-shadow:0 2.5px 10px 0 rgba(1,0,42,.1);border:none;padding-left:10px;margin-bottom:10px;font-size:14px;color:#a7a7a7}.data .choose-income::-webkit-input-placeholder,.data .choose-percent::-webkit-input-placeholder,.data .choose-sum::-webkit-input-placeholder,.data .expenses-item::-webkit-input-placeholder,.data .optionalexpenses-item::-webkit-input-placeholder{opacity:.3}.data .choose-income:-ms-input-placeholder,.data .choose-percent:-ms-input-placeholder,.data .choose-sum:-ms-input-placeholder,.data .expenses-item:-ms-input-placeholder,.data .optionalexpenses-item:-ms-input-placeholder{opacity:.3}.data .choose-income::-ms-input-placeholder,.data .choose-percent::-ms-input-placeholder,.data .choose-sum::-ms-input-placeholder,.data .expenses-item::-ms-input-placeholder,.data .optionalexpenses-item::-ms-input-placeholder{opacity:.3}.data .choose-income::placeholder,.data .choose-percent::placeholder,.data .choose-sum::placeholder,.data .expenses-item::placeholder,.data .optionalexpenses-item::placeholder{opacity:.3}.data .count-budget-btn,.data .expenses-item-btn,.data .optionalexpenses-btn{width:70px;height:30px;display:block;margin:0 auto;border:none;border-radius:2.5px;background-image:linear-gradient(336deg,#ffbd75,#ff964b),linear-gradient(#fff,#fff);box-shadow:0 2.5px 10px 0 rgba(1,0,42,.1);color:#fff;font-weight:100;font-size:12px;cursor:pointer}.data .optionalexpenses-item{width:calc((100%/3) - 4px)}.data .count-budget-btn{width:120px}.data .choose-income{display:block;width:80%;margin:0 auto}.data .checksavings{margin:0 auto;margin-top:20px;text-align:center}.data .checksavings input{width:30px}.data .choose-percent,.data .choose-sum{width:30%;margin:15px}.data .start{width:70px;height:30px;display:block;margin:0 auto;border:none;border-radius:2.5px;background-image:linear-gradient(336deg,#ffbd75,#ff964b),linear-gradient(#fff,#fff);box-shadow:0 2.5px 10px 0 rgba(1,0,42,.1);color:#fff;font-weight:100;font-size:12px;cursor:pointer;width:200px;height:45px;margin-top:30px;font-size:18px;font-weight:100}.result{width:50%}.result-table{display:flex;flex-wrap:wrap;justify-content:space-between;width:90%;min-height:400px;margin:0 auto;margin-top:42px;padding:25px;background-color:#fff;box-shadow:0 1.5px 20px 0 rgba(1,0,42,.1)}.result-table .budget,.result-table .budget-value,.result-table .daybudget,.result-table .daybudget-value,.result-table .expenses,.result-table .expenses-value,.result-table .income,.result-table .income-value,.result-table .level,.result-table .level-value,.result-table .monthsavings,.result-table .monthsavings-value,.result-table .optionalexpenses,.result-table .optionalexpenses-value,.result-table .yearsavings,.result-table .yearsavings-value{width:48%;margin-top:10px;min-height:40px;padding:10px;font-weight:500}.result-table .budget-value,.result-table .daybudget-value,.result-table .expenses-value,.result-table .income-value,.result-table .level-value,.result-table .monthsavings-value,.result-table .optionalexpenses-value,.result-table .yearsavings-value{color:#61a654;word-break:break-word}.result .time-data{width:100%;margin:0 auto;display:flex;justify-content:space-around;margin-top:40px}.result .time-data .day,.result .time-data .month,.result .time-data .year{font-size:16px;font-weight:500}.result .time-data .day-value,.result .time-data .month-value,.result .time-data .year-value{height:35px;width:calc((100%/2) - 4px);border-radius:2.5px;background-color:#fff;box-shadow:0 2.5px 10px 0 rgba(1,0,42,.1);border:none;padding-left:10px;margin-bottom:10px;font-size:14px;color:#a7a7a7;width:80px;height:30px;margin-left:25px} */
+
+/* --------------------------------------------------------- */
+
+/* ------------ОБНУЛЕНИЕ-------- */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 1;
+    background: #e9e9e9;
+    font-family: Ubuntu;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.49);
+}
+
+ul li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+button,
+button:active,
+button:focus {
+    outline: none;
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+
+/* ----------------------------------------------- */
+.main {
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 50px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data {
+    max-width: 55%;
+    text-align: center;
+    box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.result {
+    width: 40%;
+    max-width: 40%;
+    box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding: 20px 15px;
+    font-size: 18px;
+    align-self: baseline;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    box-shadow: 0 1.5px 10px 0 rgba(1, 0, 42, .05);
+    text-align: center;
+    font-size: 30px;
+}
+
+.logo span {
+    color: #ff6a30;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 6px #fff, 3px 3px 6px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease 0s;
+}
+
+button:active {
+    box-shadow: -3px -3px 6px rgba(0, 0, 0, 0.4), 3px 3px 6px #fff;
+}
+
+button.start {
+    width: 150px;
+    height: 50px;
+}
+
+.wrap {
+    padding: 20px 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    margin: 0px 0px 10px 0px;
+    font-size: 18px;
+}
+
+.data input:not(#savings) {
+    height: 35px;
+    padding-left: 10px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    box-shadow: inset -3px -3px 6px #fff, inset 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+#savings {
+    margin-left: 10px;
+}
+
+.check__item {
+    display: flex;
+    align-items: center;
+}
+
+.check__item label {
+    flex: 0 1 30%;
+}
+
+.expenses-item {
+    width: 38%;
+}
+
+.checksavings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------------- */
+.result__item {
+    margin-bottom: 30px;
+    display: flex;
+    position: relative;
+}
+
+.result__item::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: -8px;
+    left: 0;
+}
+
+.time-data .time-data__title {
+    min-width: 20%;
+}
+
+.time-data input {
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.result-sub {
+    margin: 0px 10px 0px 0px;
+}
